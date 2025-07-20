@@ -18,3 +18,22 @@ div#bg {
   background: url("/assets/img/bg.png") no-repeat center center fixed;
   background-size: cover;
 }
+
+div#menu-icon {
+  position: fixed;
+  display: inline;
+  cursor: pointer;
+  z-index: 100;
+  top: 1.4rem;
+  left: 2.4rem;
+}
+
+.barra1,
+.barra2,
+.barra3 {
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  background: #fff;
+  margin: 1rem 0;
+}

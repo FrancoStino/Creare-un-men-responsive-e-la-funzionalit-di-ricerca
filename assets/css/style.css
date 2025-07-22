@@ -12,6 +12,76 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+div#menu-slider {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(-100vw);
+}
+
+div#menu-slider.chiudi {
+  transform: translateX(-100vw);
+  transition: all 0.4s ease-in-out;
+}
+
+div#menu-slider.attiva {
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
+}
+
+nav,
+nav ul {
+  height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+nav ul:focus {
+  outline: none;
+  color: #fff;
+}
+
+nav li:hover {
+  border-left: 5px solid blue;
+  background-color: rgba(10, 10, 200, 0.15);
+}
+
+nav ul li {
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
 div#bg {
   width: 100vw;
   height: 100vh;

@@ -4,6 +4,7 @@ const menuIcon = document.getElementById("menu-icon"),
 menuIcon.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
+  menuIcon.classList.toggle("trasforma");
   menuSlider.classList.toggle("attiva");
   menuSlider.classList.toggle("chiudi");
 }

@@ -106,4 +106,18 @@ div#menu-icon {
   height: 3px;
   background: #fff;
   margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+#menu-icon.trasforma .barra2 {
+  opacity: 0;
+}
+
+#menu-icon.trasforma .barra1 {
+  transform: rotate(-45deg) translate(-0.8rem, 0.8rem);
+}
+
+#menu-icon.trasforma .barra3 {
+  transform: rotate(45deg) translate(-0.8rem, -1.1rem);
 }

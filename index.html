@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menù Responsive</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- sfondo -->
     <div id="bg"></div>
+
+    <!-- Menu -->
+    <div id="menu-slider" class="chiudi">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Chi siamo</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Servizi</a></li>
+          <li><a href="">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Icona menù -->
     <div id="menu-icon">
@@ -16,6 +36,15 @@
       <span class="barra2"></span>
       <span class="barra3"></span>
     </div>
+
+    <i id="search-icon" class="fas fa-search"></i>
+    <div id="search-slider" class="chiudi">
+      <div id="search-wrapper">
+        <input type="text" id="search-input" placeholder="Cerca nel sito" />
+        <div id="search-result"></div>
+      </div>
+    </div>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
